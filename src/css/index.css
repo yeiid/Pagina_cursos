@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: roboto, sans-serif;
+    margin: 0;
+}
+/* manera eficaz de agregar estilos a tu codigo */
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px,30px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0.5);
+    box-shadow: 1px 1px 8px rgb(0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+.color-acento{
+    color:blueviolet}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(245, 245, 245);
+
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: blueviolet;
+    font-size: 1.6rem;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+}
+#hero h1{
+    color: white;
+}
+#hero button{
+    font-size: 1.75em;
+
+}
+
+
+#somos-yh .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Nprogramas {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+#Nprogramas .container{
+    padding: 100px 0px;
+
+}
+#Nprogramas h2{
+    margin-top: 0;
+    font-size: 3em;
+
+}
+#Nprogramas p{
+    display:none;
+}
+
+#Nprogramas .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/fondo1.jpg);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/3426526.jpg);
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/19362653.jpg);
+}
+
+#carasteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#carasteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+#final h2{
+    font-size: 9vw;
+}
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 12px;
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-right:20px ;
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somo-yh .container{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    #somo-yh .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somo-yh .img-container{
+        background-image:url(../img/persona.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px;
+        margin: 5em;
+    }
+
+    #Nprogramas .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #Nprogramas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #Nprogramas h3{
+        margin-top: 0;
+    }
+    #Nprogramas .carta{
+        padding: 50px;
+        background-size: 100% 150%;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
+
+
+}
